@@ -16,6 +16,6 @@ Du styr inbrottstjuven med wasd, om larmet är på och du kolliderar med en dör
 Du simulerar brand genom drop down meny och återställer genom knappen eller genom att skriva in larmkoden
  , sprinkler aktiveras om man inte stängar av brandvarnaren inom 10sek
 
-Alla händelser presenteras i Alarmlogg terminalen , man rensar loggen genom clear knappen.
+Alla händelser presenteras i logg terminalen , man rensar loggen genom clear knappen.
 
-Jag visst inte hur jag skulle skapa simulera väggarna till alla rum i JavaFX utan en väldig massa fx-object så väggarna finns inte utan endast  dörrar/fönster/detektorer.
+Jag visst inte hur jag skulle  simulera väggarna till alla rum i JavaFX utan en väldig massa fx-object så väggarna finns inte utan endast  dörrar/fönster/detektorer.

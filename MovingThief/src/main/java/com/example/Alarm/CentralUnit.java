@@ -77,6 +77,7 @@ public class CentralUnit  {
             if(!theRom.getLocation().equalsIgnoreCase("Backyard")) {
                 smokeDetectors.add(theRom.getSmokeDetector());
                 theRom.getSmokeDetector().setCu(this);
+                sprinklers.add(theRom.getSprinkler());
                 theRom.getSprinkler().setCu(this);
             }
             if(theRom.getLocation().equalsIgnoreCase("Backyard") || theRom.getLocation().equalsIgnoreCase("Hallway")
@@ -116,6 +117,9 @@ public class CentralUnit  {
             for(SmokeDetector detector: smokeDetectors){
                 detector.activate();
             }
+            for(Sprinkler sprinkler: sprinklers){
+                sprinkler.activate();
+            }
             return  true;
         }
         return false;
@@ -137,6 +141,9 @@ public class CentralUnit  {
             }
             for(SmokeDetector detector : smokeDetectors){
                 detector.reset();
+            }
+             for(Sprinkler sprinkler: sprinklers){
+                sprinkler.reset();
             }
             return true;
         }
